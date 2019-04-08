@@ -1,11 +1,21 @@
 {
   "name": "drm-env-helpers",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "@canalplus",
+  "description": "Canal+ - DRM-ENV-HELPER",
+  "license": "MIT",
   "dependencies": {
+    "contentful": "^7.5.0",
     "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-json-view": "^1.19.1",
+    "react-scripts": "2.1.8",
+    "rx-player": "^3.11.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
