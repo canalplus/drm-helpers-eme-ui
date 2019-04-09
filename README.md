@@ -1,9 +1,9 @@
 # 📄 Drm Environement Helpers - Canal+
 
-> [Helpers](https://drm-helpers-eme.paulrossethings.com)
+> [Available here](https://drm-helpers-eme.paulrossethings.com)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5c71152d-25ad-4899-b8f9-d66a32113057/deploy-status)](https://app.netlify.com/sites/quizzical-easley-8b62ec/deploys)
 [![NPM](https://nodei.co/npm/rx-player.png?compact=true)](https://nodei.co/npm/rx-player/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c71152d-25ad-4899-b8f9-d66a32113057/deploy-status)](https://app.netlify.com/sites/quizzical-easley-8b62ec/deploys)
 
 # The why ?
 

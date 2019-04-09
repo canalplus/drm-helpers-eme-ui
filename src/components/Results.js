@@ -8,6 +8,7 @@ import { BaseContainer } from './CommonStyles';
 function Results({ configInput, error }) {
   const [supportedCombi, setSupportedCombi] = useState([]);
   const [handleError, setError] = useState(error);
+  const [lastRetrieveDate, setLastRetrieve] = useState(null);
 
   if (error !== handleError) {
     setError(error);
@@ -28,6 +29,7 @@ function Results({ configInput, error }) {
                   navigator.userAgent
                 }`
           );
+          setLastRetrieve(`Last action done at: ${new Date().toTimeString()}`);
         })
         .catch(e => setError(e.message));
     }
@@ -36,6 +38,7 @@ function Results({ configInput, error }) {
 
   return (
     <BaseContainer>
+      {lastRetrieveDate && <span>{lastRetrieveDate}</span>}
       <Segment placeholder>
         <Header icon>
           <Icon name="folder outline" />
