@@ -23,6 +23,7 @@ const client = contentful.createClient({
 
 function App() {
   const [configInput, setConfigInput] = useState('');
+  const [shouldRefresh, setRefresh] = useState(Date.now());
   const [preDefinedConfig, setDefinedConfig] = useState('loading');
   const [error, setError] = useState('');
 
@@ -39,6 +40,7 @@ function App() {
       setConfigInput(
         data.from === 'definedConfig' ? data.value : JSON.parse(data.value)
       );
+      setRefresh(Date.now());
     } catch (e) {
       setError(e.message);
     }
@@ -61,7 +63,11 @@ function App() {
           getConfigInputState={getConfigInput}
           preDefinedConfig={preDefinedConfig}
         />
-        <Results configInput={configInput} error={error} />
+        <Results
+          configInput={configInput}
+          error={error}
+          shouldRefresh={shouldRefresh}
+        />
       </Body>
     </div>
   );

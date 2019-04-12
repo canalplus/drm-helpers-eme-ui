@@ -5,7 +5,7 @@ import ReactJson from 'react-json-view';
 
 import { BaseContainer } from './CommonStyles';
 
-function Results({ configInput, error }) {
+function Results({ configInput, error, shouldRefresh }) {
   const [supportedCombi, setSupportedCombi] = useState([]);
   const [handleError, setError] = useState(error);
   const [lastRetrieveDate, setLastRetrieve] = useState(null);
@@ -34,7 +34,7 @@ function Results({ configInput, error }) {
         .catch(e => setError(e.message));
     }
     setSupportedCombi('Provide a good Array<object>');
-  }, [handleError, configInput]);
+  }, [handleError, configInput, shouldRefresh]);
 
   return (
     <BaseContainer>
