@@ -8752,10 +8752,10 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rx-player@^3.11.1:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/rx-player/-/rx-player-3.13.0.tgz#7f6fdcde99e81e849755119989b0d1b2427b109a"
-  integrity sha512-Ez8y0MYNg7sp2B1xlmHz/VhJGt9Quzjf0ihMA8drLPx4dXsqjRE5YztZ3+sbY8QdA9DVN/Nt/ObtMtfqoc8dew==
+rx-player@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/rx-player/-/rx-player-3.14.0.tgz#10af5fe70239173ee4f9bc33dd9dcc758ceda067"
+  integrity sha512-ucos+y9QzTpr7eyY62l8lfyp/UDQfjPPj+GPbdA8iuC/EuLzAGxX9Kug+fYoyFwaPmBNviNbuff+75/45frxSg==
   dependencies:
     deep-equal "1.0.1"
     next-tick "1.0.0"
